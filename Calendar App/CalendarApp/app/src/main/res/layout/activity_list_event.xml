@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainBackground"
+    tools:context=".ListEventActivity">
+
+    <RadioGroup
+        android:id="@+id/radioGr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="350dp">
+
+        <RadioButton
+            android:id="@+id/radioDaily"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/mainText"
+            android:text="Daily Events"
+            android:textColor="@color/mainText" />
+
+        <RadioButton
+            android:id="@+id/radioWeekly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="-32dp"
+            android:buttonTint="@color/mainText"
+            android:text="Weekly Events"
+            android:textColor="@color/mainText" />
+
+        <RadioButton
+            android:id="@+id/radioMonthly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="250dp"
+            android:layout_marginTop="-33dp"
+            android:buttonTint="@color/mainText"
+            android:text="Monthly Events"
+            android:textColor="@color/mainText" />
+
+    </RadioGroup>
+
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="440dp"
+        android:layout_marginBottom="1dp" />
+
+    <Button
+        android:id="@+id/buttonShow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="390dp"
+        android:layout_marginStart="100dp"
+        android:background="@drawable/switch_btn_bg"
+        android:text="Show"
+        android:textColor="@color/mainBackground" />
+
+    <Button
+        android:id="@+id/buttonMenu"
+        android:layout_width="131dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="200dp"
+        android:layout_marginTop="390dp"
+        android:background="@drawable/switch_btn_bg"
+        android:text="Back to menu"
+        android:textColor="@color/mainBackground" />
+
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="match_parent"
+        android:layout_height="354dp"
+        android:dateTextAppearance="@style/CalenderViewDateCustomText"
+        android:theme="@style/CalenderViewCustom"
+        android:weekDayTextAppearance="@style/CalenderViewWeekCustomText" />
+</RelativeLayout>

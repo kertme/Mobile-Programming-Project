@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainBackground"
+    tools:context=".CreateEventActivity">
+
+    <EditText
+        android:id="@+id/date_time_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:hint="Select Start Date and Time"
+        android:inputType="none"
+        android:textColor="@color/mainText"
+        android:textColorHint="@color/textAlt" />
+
+    <EditText
+        android:id="@+id/date_time_input2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="290dp"
+        android:hint="Select End Date and Time"
+        android:inputType="none"
+        android:textColor="@color/mainText"
+        android:textColorHint="@color/textAlt" />
+
+    <EditText
+        android:id="@+id/textEventName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:ems="10"
+        android:hint="Type Event Name"
+        android:inputType="textPersonName"
+        android:textColor="@color/mainText"
+        android:textColorHint="@color/textAlt" />
+
+    <EditText
+        android:id="@+id/textEventDesc"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="80dp"
+        android:ems="10"
+        android:hint="Type Event Description"
+        android:inputType="textPersonName"
+        android:textColor="@color/mainText"
+        android:textColorHint="@color/textAlt" />
+
+    <EditText
+        android:id="@+id/textLocation"
+        android:layout_width="300dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="180dp"
+        android:ems="10"
+        android:hint="Type Event Location"
+        android:inputType="textPersonName"
+        android:textColor="@color/mainText"
+        android:textColorHint="@color/textAlt" />
+
+    <Button
+        android:id="@+id/buttonLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="310dp"
+        android:layout_marginTop="190dp"
+        android:background="@drawable/switch_btn_bg"
+        android:onClick="showMap"
+        android:text="show"
+        android:textColor="@color/mainBackground" />
+
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="470dp"
+        android:background="@drawable/switch_btn_bg"
+        android:text="@string/save"
+        android:textColor="@color/mainBackground" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="340dp"
+        android:text="Reminder Frequency"
+        android:textColor="@color/mainText" />
+
+    <RadioGroup
+        android:id="@+id/radioGr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="360dp">
+
+        <RadioButton
+            android:id="@+id/radioDaily"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/mainText"
+            android:text="Daily"
+            android:textColor="@color/mainText" />
+
+        <RadioButton
+            android:id="@+id/radioWeekly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="90dp"
+            android:layout_marginTop="-32dp"
+            android:buttonTint="@color/mainText"
+            android:text="Weekly"
+            android:textColor="@color/mainText" />
+
+        <RadioButton
+            android:id="@+id/radioMonthly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="190dp"
+            android:layout_marginTop="-33dp"
+            android:buttonTint="@color/mainText"
+            android:text="Monthly"
+            android:textColor="@color/mainText" />
+
+        <RadioButton
+            android:id="@+id/radioYearly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="280dp"
+            android:layout_marginTop="-33dp"
+            android:buttonTint="@color/mainText"
+            android:text="Yearly"
+            android:textColor="@color/mainText" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textOpt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="400dp"
+        android:text="Reminder Options"
+        android:textColor="@color/mainText" />
+
+    <CheckBox
+        android:id="@+id/cbVibration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="430dp"
+        android:buttonTint="@color/mainText"
+        android:text="Vibration"
+        android:textColor="@color/mainText" />
+
+    <CheckBox
+        android:id="@+id/cbSound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="210dp"
+        android:layout_marginTop="430dp"
+        android:buttonTint="@color/mainText"
+        android:text="Sound"
+        android:textColor="@color/mainText" />
+
+
+</RelativeLayout>

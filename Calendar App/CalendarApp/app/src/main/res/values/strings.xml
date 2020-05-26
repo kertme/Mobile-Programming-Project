@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Calendar App</string>
+    <string name="save">Save</string>
+    <string name="event_name">Event Name</string>
+    <string name="select">Select</string>
+    <string name="share">Share</string>
+</resources>

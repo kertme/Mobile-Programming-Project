@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainBackground"
+    tools:context=".SettingsActivity">
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="148dp"
+        android:layout_height="36dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="75dp"
+        android:backgroundTint="@color/mainText" />
+
+    <TextView
+        android:id="@+id/textRingtone"
+        android:layout_width="182dp"
+        android:layout_height="42dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:text="Default Ringtone"
+        android:textColor="@color/mainText"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textReminder"
+        android:layout_width="237dp"
+        android:layout_height="48dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:text="Default Remind Time"
+        android:textColor="@color/mainText"
+        android:textSize="24sp" />
+
+    <RadioButton
+        android:id="@+id/radioNow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="180dp"
+        android:buttonTint="@color/mainText"
+        android:text="Current Time"
+        android:textColor="@color/mainText" />
+
+    <EditText
+        android:id="@+id/remindTime"
+        android:layout_width="132dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="210dp"
+        android:layout_marginTop="170dp"
+        android:ems="10"
+        android:hint="Select time"
+        android:inputType="textPersonName"
+        android:textColor="@color/mainText"
+        android:textColorHint="@color/textAlt" />
+
+    <TextView
+        android:id="@+id/textRemindFr"
+        android:layout_width="319dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="244dp"
+        android:text="Default Remind Frequency"
+        android:textColor="@color/mainText"
+        android:textSize="24sp" />
+
+    <RadioGroup
+        android:id="@+id/radioGr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp">
+
+        <RadioButton
+            android:id="@+id/radioNoReminder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/mainText"
+            android:text="Once"
+            android:textColor="@color/mainText" />
+
+        <RadioButton
+            android:id="@+id/radioDaily"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="77dp"
+            android:layout_marginTop="-32dp"
+            android:buttonTint="@color/mainText"
+            android:text="Daily"
+            android:textColor="@color/mainText" />
+
+        <RadioButton
+            android:id="@+id/radioWeekly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="145dp"
+            android:layout_marginTop="-32dp"
+            android:buttonTint="@color/mainText"
+            android:text="Weekly"
+            android:textColor="@color/mainText" />
+
+        <RadioButton
+            android:id="@+id/radioMonthly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="225dp"
+            android:layout_marginTop="-33dp"
+            android:buttonTint="@color/mainText"
+            android:text="Monthly"
+            android:textColor="@color/mainText" />
+
+        <RadioButton
+            android:id="@+id/radioYearly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="308dp"
+            android:layout_marginTop="-33dp"
+            android:buttonTint="@color/mainText"
+            android:text="Yearly"
+            android:textColor="@color/mainText" />
+
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="350dp"
+        android:layout_marginStart="150dp"
+        android:buttonTint="@color/mainText"
+        android:textColor="@color/mainText" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="185dp"
+        android:layout_marginTop="356dp"
+        android:text="Dark Mode"
+        android:textColor="@color/mainText" />
+
+
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="400dp"
+        android:background="@drawable/switch_btn_bg"
+        android:text="@string/save"
+        android:textColor="@color/mainBackground" />
+
+
+
+
+</RelativeLayout>
